@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: social-auth-core
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/social-auth-core/social-auth-core-{{ version }}.tar.gz
-  sha256: cc871fb4528f7cbba67efdba0bc0f7d7c6eeb92113b0cdc9368dd91ffe965782
+  sha256: 8320666548a532eb158968eda542bbe1863682357c432d8c4e28034a7f1e3b58
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -39,8 +39,8 @@ test:
 
 about:
   home: https://github.com/python-social-auth/social-core
-  license: BSD 3-clause
-  summary: 'Python social authentication made simple.'
+  license: BSD-3-Clause
+  summary: 'Python social authentication made simple'
 
 extra:
   recipe-maintainers:

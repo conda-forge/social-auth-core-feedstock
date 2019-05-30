@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About social-auth-core
 ======================
 
@@ -18,8 +14,17 @@ Summary: Python social authentication made simple.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/social-auth-core-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/social-auth-core-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5200&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/social-auth-core-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
