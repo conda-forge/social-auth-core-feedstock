@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -39,8 +39,8 @@ test:
 
 about:
   home: https://github.com/python-social-auth/social-core
-  license: BSD 3-clause
-  summary: 'Python social authentication made simple.'
+  license: BSD-3-Clause
+  summary: 'Python social authentication made simple'
 
 extra:
   recipe-maintainers:
