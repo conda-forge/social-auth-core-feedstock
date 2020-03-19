@@ -9,9 +9,8 @@ source:
   sha256: 5e1ef182370bb2dab4c15a89be725737fb5b2242a12dc40cf22a23d9c00ebc5f
 
 build:
-  number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -19,23 +18,23 @@ requirements:
     - pip
   run:
     - python
-    - requests >=2.9.1
+    - cryptography >=1.4
     - oauthlib >=1.0.3
-    - requests-oauthlib >=0.6.1
-    - six >=1.10.0
     - pyjwt >=1.4.0
-    - defusedxml >=0.5.0rc1
-    - python3-openid >=3.0.10
+    - requests-oauthlib >=0.6.1
+    - requests >=2.9.1
+    - six >=1.10.0
+    - python-openid >=2.2.5  # [py2k]
+    - unidecode >=1.1.1  # [py2k]
+    - defusedxml >=0.5.0rc1  # [py3k]
+    - python3-openid >=3.0.10  # [py3k]
+    - unidecode >=1.0.23  # [py3k]
 
 test:
   imports:
     - social_core
     - social_core.backends
     - social_core.pipeline
-    - social_core.tests
-    - social_core.tests.actions
-    - social_core.tests.backends
-    - social_core.tests.backends.data
 
 about:
   home: https://github.com/python-social-auth/social-core
