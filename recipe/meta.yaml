@@ -19,22 +19,25 @@ requirements:
   run:
     - python
     - cryptography >=1.4
+    - defusedxml >=0.5.0rc1  # [py3k]
     - oauthlib >=1.0.3
     - pyjwt >=1.4.0
-    - requests-oauthlib >=0.6.1
-    - requests >=2.9.1
-    - six >=1.10.0
     - python-openid >=2.2.5  # [py2k]
-    - unidecode >=1.1.1  # [py2k]
-    - defusedxml >=0.5.0rc1  # [py3k]
     - python3-openid >=3.0.10  # [py3k]
-    - unidecode >=1.0.23  # [py3k]
+    - requests >=2.9.1
+    - requests-oauthlib >=0.6.1
+    - six >=1.10.0
+
 
 test:
   imports:
     - social_core
     - social_core.backends
-    - social_core.pipeline
+  commands:
+    - pip check
+  requires:
+    - pip
+
 
 about:
   home: https://github.com/python-social-auth/social-core
