@@ -10,20 +10,22 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - cryptography >=1.4
-    - defusedxml >=0.5.0rc1  # [py3k]
+    # [py>=3]
+    - defusedxml >=0.5.0rc1
     - oauthlib >=1.0.3
-    - pyjwt >=1.4.0
-    - python-openid >=2.2.5  # [py2k]
-    - python3-openid >=3.0.10  # [py3k]
+    - pyjwt >=1.4.0,<2
+    # [py>=3]
+    - python3-openid >=3.0.10
     - requests >=2.9.1
     - requests-oauthlib >=0.6.1
     - six >=1.10.0
