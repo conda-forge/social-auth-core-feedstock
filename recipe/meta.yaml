@@ -1,4 +1,4 @@
-{% set version = "3.3.3" %}
+{% set version = "4.0.2" %}
 
 package:
   name: social-auth-core
@@ -6,24 +6,26 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/social-auth-core/social-auth-core-{{ version }}.tar.gz
-  sha256: 2f6ce1af8ec2b2cc37b86d647f7d4e4292f091ee556941db34b1e0e2dee77fc0
+  sha256: 604798ec00a49a84f7a173460c5997c5409080e64acc8a47e2eefd6f59439a15
 
 build:
-  number: 1
+  number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - cryptography >=1.4
-    - defusedxml >=0.5.0rc1  # [py3k]
+    # [py>=3]
+    - defusedxml >=0.5.0rc1
     - oauthlib >=1.0.3
-    - pyjwt >=1.4.0
-    - python-openid >=2.2.5  # [py2k]
-    - python3-openid >=3.0.10  # [py3k]
+    - pyjwt >=1.4.0,<2
+    # [py>=3]
+    - python3-openid >=3.0.10
     - requests >=2.9.1
     - requests-oauthlib >=0.6.1
     - six >=1.10.0
