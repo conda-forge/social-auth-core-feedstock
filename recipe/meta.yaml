@@ -20,15 +20,13 @@ requirements:
   run:
     - python >=3
     - cryptography >=1.4
-    # [py>=3]
     - defusedxml >=0.5.0rc1
     - oauthlib >=1.0.3
-    - pyjwt >=1.4.0,<2
-    # [py>=3]
+    - pyjwt >=2.0.0
+    - python
     - python3-openid >=3.0.10
     - requests >=2.9.1
     - requests-oauthlib >=0.6.1
-    - six >=1.10.0
 
 
 test:
