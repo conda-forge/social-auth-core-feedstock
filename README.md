@@ -1,11 +1,11 @@
-About social-auth-core
-======================
+About social-auth-core-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/social-auth-core-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-social-auth/social-core
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/social-auth-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python social authentication made simple
 
