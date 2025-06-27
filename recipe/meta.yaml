@@ -16,19 +16,17 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=78.0.2
     - pip
   run:
     - python >={{ python_min }}
     - cryptography >=1.4
-    - defusedxml >=0.5.0rc1
+    - defusedxml >=0.5.0
     - oauthlib >=1.0.3
-    - pyjwt >=2.0.0
-    - python >={{ python_min }}
+    - pyjwt >=2.7.0
     - python3-openid >=3.0.10
-    - requests >=2.9.1
     - requests-oauthlib >=0.6.1
-
+    - requests >=2.9.1
 
 test:
   imports:
