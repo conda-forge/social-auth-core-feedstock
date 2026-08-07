@@ -1,4 +1,4 @@
-{% set version = "5.0.2" %}
+{% set version = "5.1.0" %}
 
 package:
   name: social-auth-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/social-auth-core/social_auth_core-{{ version }}.tar.gz
-  sha256: f53930c9b2a86ee0fc8e8fb0eac79221cfc2f017d9efb578691e5a3e2cf36784
+  sha256: 1e8b678473fef38a972d3e4c5f6fa898558abe7ba46bd56b8429cc484483bf7b
 
 build:
   number: 0
