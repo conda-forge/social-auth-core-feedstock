@@ -7,7 +7,7 @@ Home: https://github.com/python-social-auth/social-core
 
 Package license: BSD-3-Clause
 
-Summary: Python social authentication made simple
+Summary: Python social authentication made simple.
 
 Current build status
 ====================
