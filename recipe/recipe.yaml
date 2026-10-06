@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "5.2.0"
+  version: "6.0.0"
 
 package:
   name: social-auth-core
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/s/social-auth-core/social_auth_core-${{ version }}.tar.gz
-  sha256: 72d3c52fe87d07c0db8421fee5f5ec33b3dacce449975b8a572cd0691e3de315
+  sha256: 571c154bd60fea88d0b8e1912ecf5cf3ea48cde9e92ad0f7fbec4001bff09c98
 
 build:
   number: 0
